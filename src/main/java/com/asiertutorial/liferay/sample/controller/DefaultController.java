@@ -25,18 +25,6 @@ public class DefaultController {
 	@Autowired
 	private ShopService shopService;
 
-	// @Autowired
-	// private ProjectService projectService;
-
-	// @InitBinder
-	// public void registerCustomEditors(WebDataBinder binder, WebRequest
-	// request) {
-	//
-	// DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-	// dateFormat.setLenient(false);
-	// binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat,
-	// true));
-	// }
 
 	@RenderMapping
 	public String home(RenderRequest request, RenderResponse response,
