@@ -4,11 +4,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.envers.configuration.spi.AuditConfiguration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
-/**
- * 
- * @author joan.bonilla
- * 
- */
 public class SchemaGenerator {
 
 	private static void createSchema() {
