@@ -10,25 +10,24 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.GenericGenerator;
-
 @Entity
-@Table(	name = "CUSTOM_V2_PROJECT")
-//@GenericGenerator(name = "LiferayStrategy", strategy = "com.asiertutorial.liferay.core.hibernate.LiferayCounterGenerator")
+@Table(name = "CUSTOM_V2_PROJECT")
+// @GenericGenerator(name = "LiferayStrategy", strategy =
+// "com.asiertutorial.liferay.core.hibernate.LiferayCounterGenerator")
 public class Project implements java.io.Serializable {
 
 	private static final long serialVersionUID = -6430077981599333475L;
 
-	private long 		projectId;
-	private long 		companyId;
-	private long 		groupId;
-	private Date 		createDate;
-	private Date 		modifiedDate;
-	private String 		title;
-	private int 		members;
-	private Date 		deliveryDate;
-	private String 		technologies;
-	private boolean 	external;
+	private long projectId;
+	private long companyId;
+	private long groupId;
+	private Date createDate;
+	private Date modifiedDate;
+	private String title;
+	private int members;
+	private Date deliveryDate;
+	private String technologies;
+	private boolean external;
 
 	@Id
 	@Column(name = "project_id")

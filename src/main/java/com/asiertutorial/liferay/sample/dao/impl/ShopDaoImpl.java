@@ -27,11 +27,11 @@ public class ShopDaoImpl extends BaseDaoImpl<Shop> implements ShopDao {
 	protected Order getDefaultOrder() {
 		return Order.asc("name");
 	}
-	
+
 	@Override
 	@LogSampleMethod(action = LogSampleMethod.Action.SAVE)
 	public Shop save(Shop object) {
-//		getSession().getCurrentSession().save(object);
+		// getSession().getCurrentSession().save(object);
 		getSession().save(object);
 		return object;
 	}
@@ -42,7 +42,7 @@ public class ShopDaoImpl extends BaseDaoImpl<Shop> implements ShopDao {
 		getSession().update(object);
 		return object;
 	}
-	
+
 	@Override
 	@LogSampleMethod(action = LogSampleMethod.Action.UPDATE)
 	public Shop merge(Shop object) {

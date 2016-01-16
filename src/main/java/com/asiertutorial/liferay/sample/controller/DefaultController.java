@@ -25,7 +25,6 @@ public class DefaultController {
 	@Autowired
 	private ShopService shopService;
 
-
 	@RenderMapping
 	public String home(RenderRequest request, RenderResponse response,
 			Model model) {

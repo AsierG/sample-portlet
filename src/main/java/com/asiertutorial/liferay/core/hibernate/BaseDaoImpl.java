@@ -15,7 +15,7 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 	private SessionFactory sessionFactory;
 
 	protected abstract Class<? extends T> getEntityClass();
-	
+
 	protected abstract Order getDefaultOrder();
 
 	public Session getSession() {

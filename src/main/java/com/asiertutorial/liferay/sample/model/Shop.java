@@ -13,63 +13,61 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(	name = "SAMPLE_SHOP")
+@Table(name = "SAMPLE_SHOP")
 public class Shop extends Base {
 
-
 	private static final long serialVersionUID = 5598927160885635644L;
-	
+
 	@Id
 	@Column(name = "shop_id")
 	@SequenceGenerator(name = "seq_shop", sequenceName = "SEQ_SHOP", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_shop")
 	private long shopId;
-	
-//	@Column(name = "name", length = 200)
-//	@NotEmpty
-//	@Length(max = 200)
+
+	// @Column(name = "name", length = 200)
+	// @NotEmpty
+	// @Length(max = 200)
 	private String name;
-	
-	@Column(name= "billing")
+
+	@Column(name = "billing")
 	@NotNull
 	private Long billing;
-	
-	@Column(name= "workers")
+
+	@Column(name = "workers")
 	@NotNull
 	private Long workers;
-	
-	
+
 	public long getShopId() {
 		return shopId;
 	}
-	
+
 	public void setShopId(long shopId) {
 		this.shopId = shopId;
 	}
-	
+
 	@Column(name = "name", length = 200)
 	@NotEmpty
 	@Length(max = 200)
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public Long getBilling() {
 		return billing;
 	}
-	
+
 	public void setBilling(Long billing) {
 		this.billing = billing;
 	}
-	
+
 	public Long getWorkers() {
 		return workers;
 	}
-	
+
 	public void setWorkers(Long workers) {
 		this.workers = workers;
 	}
@@ -113,6 +111,5 @@ public class Shop extends Base {
 			return false;
 		return true;
 	}
-	
 
 }

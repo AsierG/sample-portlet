@@ -116,8 +116,8 @@ public class ShopController {
 	}
 
 	@RenderMapping(params = { "action=newShop" })
-	public String newShop(RenderRequest request,
-			RenderResponse response, Model model, PortletPreferences prefs) {
+	public String newShop(RenderRequest request, RenderResponse response,
+			Model model, PortletPreferences prefs) {
 
 		if (LOG.isDebugEnabled()) {
 			LOG.debug("newShop ");
@@ -140,7 +140,7 @@ public class ShopController {
 				.getAttribute(WebKeys.THEME_DISPLAY);
 
 		response.setRenderParameter("entity", "shopEntity");
-		
+
 		if (bindingResult.hasErrors()) {
 			// projectService.save(themeDisplay.getUserId(),
 			// themeDisplay.getCompanyId(),

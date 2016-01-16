@@ -20,7 +20,7 @@ public class InitComponentStartupService implements ServletContextAware {
 			.getLogger(InitComponentStartupService.class);
 
 	public void initServiceComponent() {
-		
+
 		File servicePropertiesFile = new File(
 				servletContext
 						.getRealPath("WEB-INF/classes/service.properties"));

@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.asiertutorial.liferay.sample.dao.ActionDao;
 import com.asiertutorial.liferay.sample.model.Action;
 
-
 @Service
 public class ActionService {
 

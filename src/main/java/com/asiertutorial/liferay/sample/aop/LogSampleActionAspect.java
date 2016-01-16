@@ -40,7 +40,6 @@ public class LogSampleActionAspect {
 
 		Object result = null;
 
-
 		result = joinPoint.proceed();
 
 		Signature signature = joinPoint.getSignature();

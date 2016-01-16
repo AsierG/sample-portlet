@@ -5,31 +5,31 @@ import java.io.Serializable;
 public class ShopLuceneSearchForm implements Serializable {
 
 	private static final long serialVersionUID = -7904946402588384143L;
-	
+
 	private String name;
 	private Long workers;
 	private Long billing;
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public Long getWorkers() {
 		return workers;
 	}
-	
+
 	public void setWorkers(Long workers) {
 		this.workers = workers;
 	}
-	
+
 	public Long getBilling() {
 		return billing;
 	}
-	
+
 	public void setBilling(Long billing) {
 		this.billing = billing;
 	}
@@ -70,6 +70,5 @@ public class ShopLuceneSearchForm implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
+
 }

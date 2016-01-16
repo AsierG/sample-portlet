@@ -15,9 +15,9 @@ public class ProjectService {
 
 	@Autowired
 	private ProjectDao projectDao;
-	
+
 	@Transactional(readOnly = true)
-	public List<Project> getProjects(){
+	public List<Project> getProjects() {
 		return projectDao.findAll();
 	}
 
@@ -26,13 +26,13 @@ public class ProjectService {
 			Project project) {
 
 		Date now = new Date();
-		
+
 		project.setCompanyId(companyId);
 		project.setGroupId(scopeGroupId);
 		project.setCreateDate(now);
 		project.setModifiedDate(now);
-		
+
 		return projectDao.save(project);
 	}
-	
+
 }
